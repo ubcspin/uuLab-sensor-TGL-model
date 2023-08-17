@@ -1,8 +1,9 @@
-datadirdev <- "C:/Users/Laura/Documents/School/2017-2022 PhD/Projects/uuLab/new data/pressure_dev"
-datadirrg <- "C:/Users/Laura/Documents/School/2017-2022 PhD/Projects/uuLab/new data/pressure_rg/all_classes"
-datadirall<- "C:/Users/Laura/Documents/School/2017-2022 PhD/Projects/uuLab/new data/all_pressure"
-todir <- "C:/Users/Laura/Documents/School/2017-2022 PhD/Projects/uuLab/new data/featurefiles07"
+datadirdev <- "C:/Users/Laura/Documents/GitHub/uuLab-sensor-TGL-model/Shearsense Data Processing/new data/pressure_dev"
+datadirrg <- "C:/Users/Laura/Documents/GitHub/uuLab-sensor-TGL-model/Shearsense Data Processing/new data/pressure_rg/all_classes"
+datadirall<- "C:/Users/Laura/Documents/GitHub/uuLab-sensor-TGL-model/Shearsense Data Processing/new data/all_pressure"
+todir <- "C:/Users/Laura/Documents/GitHub/uuLab-sensor-TGL-model/Shearsense Data Processing//new data/featurefiles-bl"
 setwd(datadirall)
+
 
 ###################################################################################
 #	this set of fxns is file name processing									  #
@@ -135,6 +136,17 @@ getCount <- function(x) {
 	}
 
 }
+
+###################################################################################
+#	this set of fxns removes the no-touch baseline								  #
+###################################################################################
+
+removeBL <- function(x) {
+
+	notouchdata <- read.csv()
+
+}
+
 
 ###################################################################################
 #	this set of fxns processes the frame										  #
